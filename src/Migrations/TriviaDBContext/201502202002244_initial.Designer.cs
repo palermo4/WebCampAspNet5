@@ -4,7 +4,7 @@ using Microsoft.Data.Entity.Migrations.Infrastructure;
 using System;
 using WebCampAspNet5.Models;
 
-namespace src.Migrations
+namespace src.Migrations.TriviaDBContext
 {
     [ContextType(typeof(WebCampAspNet5.Models.TriviaDBContext))]
     public partial class initial : IMigrationMetadata
@@ -13,7 +13,7 @@ namespace src.Migrations
         {
             get
             {
-                return "201502201820478_initial";
+                return "201502202002244_initial";
             }
         }
         

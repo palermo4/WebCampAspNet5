@@ -4,7 +4,7 @@ using Microsoft.Data.Entity.Migrations.Infrastructure;
 using System;
 using WebCampAspNet5.Models;
 
-namespace WebCampAspNet5.Migrations
+namespace src.Migrations
 {
     [ContextType(typeof(WebCampAspNet5.Models.ApplicationDbContext))]
     public partial class initial : IMigrationMetadata
@@ -13,7 +13,7 @@ namespace WebCampAspNet5.Migrations
         {
             get
             {
-                return "201502201821092_initial";
+                return "201502202001185_initial";
             }
         }
         

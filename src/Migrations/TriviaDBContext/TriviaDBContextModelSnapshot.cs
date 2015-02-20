@@ -4,7 +4,7 @@ using Microsoft.Data.Entity.Migrations.Infrastructure;
 using System;
 using WebCampAspNet5.Models;
 
-namespace src.Migrations
+namespace src.Migrations.TriviaDBContext
 {
     [ContextType(typeof(WebCampAspNet5.Models.TriviaDBContext))]
     public class TriviaDBContextModelSnapshot : ModelSnapshot

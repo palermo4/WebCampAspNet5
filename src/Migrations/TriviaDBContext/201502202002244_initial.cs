@@ -3,7 +3,7 @@ using Microsoft.Data.Entity.Migrations.Builders;
 using Microsoft.Data.Entity.Migrations.Model;
 using System;
 
-namespace src.Migrations
+namespace src.Migrations.TriviaDBContext
 {
     public partial class initial : Migration
     {

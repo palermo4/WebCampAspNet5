@@ -4,7 +4,7 @@ using Microsoft.Data.Entity.Migrations.Infrastructure;
 using System;
 using WebCampAspNet5.Models;
 
-namespace WebCampAspNet5.Migrations
+namespace src.Migrations
 {
     [ContextType(typeof(WebCampAspNet5.Models.ApplicationDbContext))]
     public class ApplicationDbContextModelSnapshot : ModelSnapshot

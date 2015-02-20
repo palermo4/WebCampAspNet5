@@ -1,15 +1,19 @@
-﻿{
+﻿//Data Source=(localdb)\ProjectsV12;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False
+{
     "Data": {
-        "DefaultConnection": { 
-            "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=webcampaspnet5db;Trusted_Connection=True;MultipleActiveResultSets=true"
+		"AppConnection": {
+			"ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5app;Trusted_Connection=True;MultipleActiveResultSets=true"
+		},
+		 "TriviaConnection": { 
+            "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5trivia;Trusted_Connection=True;MultipleActiveResultSets=true"
         }
     },
     "EntityFramework": {
 		"ApplicationDbContext": {
-			"ConnectionStringKey": "Data:DefaultConnection:ConnectionString"
+			"ConnectionStringKey": "Data:AppConnection:ConnectionString"
 		},
 		"TriviaDbContext": {
-            "ConnectionStringKey": "Data:DefaultConnection:ConnectionString"
+            "ConnectionStringKey": "Data:TriviaConnection:ConnectionString"
         }
     }
 }
