@@ -34,7 +34,8 @@ namespace WebCampAspNet5
             // Add EF services to the services container.
             services.AddEntityFramework(Configuration)
                 .AddSqlServer()
-                .AddDbContext<ApplicationDbContext>();
+                .AddDbContext<ApplicationDbContext>()
+                .AddDbContext<TriviaDBContext>();
 
             // Add Identity services to the services container.
             services.AddIdentity<ApplicationUser, IdentityRole>(Configuration)

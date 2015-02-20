@@ -5,6 +5,7 @@ using Microsoft.AspNet.Mvc;
 
 namespace WebCampAspNet5.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public IActionResult Index()

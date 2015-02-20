@@ -1,11 +1,14 @@
 ﻿{
     "Data": {
         "DefaultConnection": { 
-            "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-TagHelperStarterWeb-6badf603-561b-47ff-bef8-74c21ea4ff1f;Trusted_Connection=True;MultipleActiveResultSets=true"
+            "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=webcampaspnet5db;Trusted_Connection=True;MultipleActiveResultSets=true"
         }
     },
     "EntityFramework": {
-        "ApplicationDbContext": {
+		"ApplicationDbContext": {
+			"ConnectionStringKey": "Data:DefaultConnection:ConnectionString"
+		},
+		"TriviaDbContext": {
             "ConnectionStringKey": "Data:DefaultConnection:ConnectionString"
         }
     }

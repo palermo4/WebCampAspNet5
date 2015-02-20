@@ -7,9 +7,25 @@ using WebCampAspNet5.Models;
 namespace WebCampAspNet5.Migrations
 {
     [ContextType(typeof(WebCampAspNet5.Models.ApplicationDbContext))]
-    public class ApplicationDbContextModelSnapshot : ModelSnapshot
+    public partial class initial : IMigrationMetadata
     {
-        public override IModel Model
+        string IMigrationMetadata.MigrationId
+        {
+            get
+            {
+                return "201502201821092_initial";
+            }
+        }
+        
+        string IMigrationMetadata.ProductVersion
+        {
+            get
+            {
+                return "7.0.0-beta2-11909";
+            }
+        }
+        
+        IModel IMigrationMetadata.TargetModel
         {
             get
             {
